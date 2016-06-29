@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:id="@+id/root"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include layout="@layout/base_living_opera" />
+
+    <ViewStub
+        android:id="@+id/front_living_opera_con"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/living_front_opera" />
+</RelativeLayout>

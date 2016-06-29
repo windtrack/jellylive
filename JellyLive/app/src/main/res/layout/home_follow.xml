@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oo58.jelly.view.refreshview.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginbg"
+    android:orientation="vertical"
+    android:id="@+id/folowlistView"
+    >
+    <include layout="@layout/refresh_head" />
+    <com.oo58.jelly.view.refreshview.pulllableview.PullableListView
+        android:id="@+id/follow_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+    <include layout="@layout/load_more" />
+</com.oo58.jelly.view.refreshview.PullToRefreshLayout>

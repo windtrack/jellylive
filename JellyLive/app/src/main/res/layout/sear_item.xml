@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/content"
+    android:padding="10dp">
+
+    <com.oo58.jelly.view.CircleImageView
+        android:id="@+id/face"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@mipmap/testpic" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black2a"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/sexman" />
+
+    <ImageView
+        android:id="@+id/label_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@mipmap/tubiao" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/follow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_follow_btn"
+        android:text="+关注"
+        android:textColor="@color/yellow_btn_normal"
+        android:textSize="14sp" />
+
+
+
+
+</LinearLayout>

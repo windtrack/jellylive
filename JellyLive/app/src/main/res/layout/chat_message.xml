@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="1dp"
+    android:paddingRight="3dp"
+>
+
+
+    <TextView
+        android:id="@+id/message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:shadowColor="#ff000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="奋斗：开始的计划发生的"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

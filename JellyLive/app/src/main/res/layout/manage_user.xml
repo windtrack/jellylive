@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_sethelper"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@android:color/transparent"
+            android:text="设管理员"
+            android:textColor="@color/blackthreef"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayf3" />
+
+        <Button
+            android:id="@+id/bt_helplist"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@android:color/transparent"
+            android:text="管理员列表"
+            android:textColor="@color/blackthreef"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayf3" />
+
+        <Button
+            android:id="@+id/bt_shoutup"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@android:color/transparent"
+            android:text="禁言"
+            android:textColor="@color/blackthreef"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grayf3" />
+
+        <Button
+            android:id="@+id/bt_report"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@android:color/transparent"
+            android:text="举报"
+            android:textColor="@color/blackthreef"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

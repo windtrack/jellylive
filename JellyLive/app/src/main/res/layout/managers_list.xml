@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grayf4"
+    android:orientation="vertical">
+
+    <include layout="@layout/personal_top" />
+
+    <TextView
+        android:id="@+id/show_managers_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="当前管理员（1/5）"
+        android:textColor="@color/blackthreef"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/managers_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+</LinearLayout>

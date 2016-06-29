@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/opera_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black50"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/danmu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/danmu_btn" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/graye2_coner_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <EditText
+                    android:id="@+id/content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="和大家聊聊天吧~"
+                    android:textColor="@color/blackthreef"
+                    android:textColorHint="@color/gray8c"
+                    android:textSize="14sp" />
+
+                <ImageButton
+                    android:id="@+id/face_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/chat_face_btn" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_chat_msg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/yellow_coner_hellow"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="发送"
+                android:textColor="@color/blackthreef" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/face_con"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@color/grayf4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/face_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="210dp" />
+
+            <LinearLayout
+                android:id="@+id/indicator_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:src="@mipmap/indicator_yellow" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/indicator_gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

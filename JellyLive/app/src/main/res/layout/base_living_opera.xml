@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/living_opera_con"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--顶部的布局-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_black50_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp">
+
+                <com.oo58.jelly.view.CircleImageView
+                    android:id="@+id/anchoricon"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/testpic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/anchor_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/look_show_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:text="在线0"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_anchorfollow"
+                    android:layout_width="50dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/fllow_btn"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="已关注"
+                    android:textColor="@color/blackthreef"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/look_user_list"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:scrollbars="none" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/living_hot_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:background="@drawable/circle_black50_h22"
+                android:drawableRight="@mipmap/white_rightjt"
+                android:gravity="center"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:text="热度：10086"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="果冻号：10086"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/check_living_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/check_camera_btn" />
+
+            <ImageButton
+                android:id="@+id/living_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/close_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--直播的底部内容和操作按钮的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--连续刷礼物的容器-->
+        <LinearLayout
+            android:id="@+id/refresh_git_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="65dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <!--弹幕跑道-->
+        <RelativeLayout
+            android:id="@+id/danmu_con"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:minHeight="65dp">
+
+            <RelativeLayout
+                android:id="@+id/danmu_top_con"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_black50_h30"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="50dp">
+
+                    <TextView
+                        android:id="@+id/danmu_top_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.oo58.jelly.view.CircleImageView
+                    android:id="@+id/danmu_top_face"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/testpic" />
+
+                <TextView
+                    android:id="@+id/danmu_top_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/yellow_words"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/danmu_bottom_con"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_black50_h30"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="50dp">
+
+                    <TextView
+                        android:id="@+id/danmu_bottom_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <com.oo58.jelly.view.CircleImageView
+                    android:id="@+id/danmu_bottom_face"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/testpic" />
+
+                <TextView
+                    android:id="@+id/danmu_bottom_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/yellow_words"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <!--消息列表-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ListView
+                android:id="@+id/chat_msg_list"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="125dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:drawSelectorOnTop="false"
+                android:listSelector="#00000000"
+                android:scrollbars="none"
+                android:stackFromBottom="true"
+
+                />
+        </LinearLayout>
+
+        <ViewStub
+            android:id="@+id/base_living_opera_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+</RelativeLayout>

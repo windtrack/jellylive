@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/send_sixin_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blue_chat_bg"
+            android:maxWidth="280dp"
+            android:text="非常高兴能认识你非常高兴能认识你非常高兴能认识你非常高兴能认识你"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.oo58.jelly.view.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/testpic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/receive_sixin_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.oo58.jelly.view.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/testpic" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_chat_bg"
+            android:maxWidth="280dp"
+            android:text="非常高兴能认识你非常高兴能认识你非常高兴能认识你非常高兴能认识你"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg">#f7f7f7</color>
+    <color name="gray7e">#7e7e7e</color>
+    <color name="blackthreef">#3f3f3f</color>
+    <color name="loginbg">#ededed</color>
+    <color name="logininput">#d2d2d0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow_btn_normal">#ebb012</color>
+    <color name="yellow_btn_clicked">#ffd800</color>
+    <color name="yellow200">#ffd200</color>
+    <color name="yellow_words">#F9BC03</color>
+    <color name="red_words">#f53505</color>
+    <color name="black_words">#313131</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="lightblue">#6593cb</color>
+    <color name="black3">#030303</color>
+    <color name="black5e">#5e5e5e</color>
+    <color name="black2c">#2c2c2c</color>
+    <color name="black50">#A5000000</color>
+    <color name="black20">#CC000000</color>
+    <color name="black40">#99000000</color>
+    <color name="black2a">#2a2a2a</color>
+    <color name="grayf4">#f4f4f4</color>
+    <color name="gray96">#969696</color>
+    <color name="gray565b5f">#565b5f</color>
+    <color name="grayf3">#f3f3f3</color>
+    <color name="black30">#4C000000</color>
+    <color name="loginbtnnormal">#ffd800</color>
+    <color name="chat_zi_color">#333333</color>
+    <color name="systemmsg">#ff4949</color>
+    <color name="zijicolor">#ff730d</color>
+    <color name="listViewFgx">#e5e5e5</color>
+    <color name="BgColor">#ffd1dce9</color>
+    <color name="disc_word">#313131</color>
+    <color name="grayc9">#c9c9c9</color>
+    <color name="gray8f8f8e">#8f8f8e</color>
+    <color name="graye2">#e2e2e2</color>
+    <color name="gray8c">#8c8c8c</color>
+    <color name="grayc6">#c6c6c6</color>
+    <color name="grayb7">#b7b7b7</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="topbar_3">#339EFE</color>
+    <color name="line">#dddddd</color>
+    <color name="text_10">#333333</color>
+    <color name="text_11">#999999</color>
+    <color name="gray_bg">#f8f8f8</color>
+</resources>

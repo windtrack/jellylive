@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">果冻直播</string>
+    <string name="checklogintype">选择登录方式</string>
+    <string name="zslogin">中视账号登录</string>
+    <string name="inputpwd">请输入密码</string>
+    <string name="inputmember">请输入账号</string>
+    <string name="login">登录</string>
+    <string name="check">获取验证码</string>
+    <string name="findpwd">找回密码</string>
+    <string name="inputphone">请输入手机号码</string>
+    <string name="inputcode">请输入6位的验证码</string>
+    <string name="follow_info">&#160;&#160;关注好友的直播</string>
+    <string name="loginxy">登录及代表你同意果冻服务和隐私条款</string>
+
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <string name="label_info">观看直播、开播、与主播互动都可以增加经验哦 \n 不行太慢，多多刷礼，刷的越多，升级越快哦~ \n 偷偷告诉你，分享也有经验哦</string>
+</resources>
